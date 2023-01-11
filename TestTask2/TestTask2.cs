@@ -6,8 +6,14 @@ namespace TT_Saber
     {
         static void Main(string[] args)
         {
-            // пример использования
-            var data = new StringBuilder("AAAAAAAAAA BBBB AAAAAAA");
+            //  Несмелов Марат Олегович, 11.01.2023, ушло около 1.5 часов
+            //  без вложенного цикла обойтись не смог, учитывая, что строчка
+            //  может быть с разным количеством символов А или В например.
+            //  Пришел либо к рукерсии, либо к зацикливанию цикла с проверкой
+            //  выполненности требуемой задачи
+           
+
+            var data = new StringBuilder("AAAAAAAA BBBB AAAAAAA");
             data = RemoveDups(data);
             Console.WriteLine(data); // "A B A"
         }
@@ -30,7 +36,7 @@ namespace TT_Saber
                     }
                 }
             }
-            return data;
+           return data;
         }
 
     }
