@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TT_Saber
+﻿namespace TT_Saber
 {
     class TestTask1
     {
