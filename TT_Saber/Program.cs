@@ -6,6 +6,11 @@ namespace TT_Saber
     {
         static void Main(string[] args)
         {
+            //  Несмелов Марат Олегович, 11.01.2023, ушло около 6 часов
+            //  в основном сложность составило размышление об использовании
+            //  коллекции (стек), и решение с отрицательными числами
+
+
             int numbercheck = 12;
             ShowBinaryRepresentation(numbercheck);
             ShowBinaryRepresentation(-numbercheck);
