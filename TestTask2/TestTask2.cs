@@ -20,27 +20,21 @@ namespace TT_Saber
         private static void RemoveDups(StringBuilder data)
         {
             bool isRemovedRepeat = false;
+            bool isNotChanged = false;
 
-            while (!isRemovedRepeat)
+            while (!isRemovedRepeat || !isNotChanged)
             {
-
+                isNotChanged = true;
                 for (int i = 0; i < data.Length - 1; i++)
                 {
                     if (data[i] == data[i + 1])
                     {
                         data.Remove(i, 1);
-                        isRemovedRepeat = false;
+                        isNotChanged = false;
                     }
                     else
                     {
                         isRemovedRepeat = true;
-                    }
-                }
-                for (int i = 0; i < data.Length - 1; i++) //понимаю, что не изящно, но я вышел за пределы указанного мною времени.
-                {                                         //подумаю еще, но пока так.
-                    if (data[i] == data[i + 1])
-                    {
-                        isRemovedRepeat = false;
                     }
                 }
             }
