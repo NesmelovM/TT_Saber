@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT_Saber", "TT_Saber\TT_Saber.csproj", "{1A5C757C-14DC-4AC8-8261-F4AC5D3EE3FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask2", "TestTask2\TestTask2.csproj", "{89FE132B-7E4E-4ACF-A5EC-28E943D1B42E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1A5C757C-14DC-4AC8-8261-F4AC5D3EE3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A5C757C-14DC-4AC8-8261-F4AC5D3EE3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A5C757C-14DC-4AC8-8261-F4AC5D3EE3FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FE132B-7E4E-4ACF-A5EC-28E943D1B42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FE132B-7E4E-4ACF-A5EC-28E943D1B42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FE132B-7E4E-4ACF-A5EC-28E943D1B42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FE132B-7E4E-4ACF-A5EC-28E943D1B42E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
