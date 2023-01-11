@@ -13,11 +13,11 @@ namespace TT_Saber
             //  выполненности требуемой задачи
            
 
-            var data = new StringBuilder("AAAAAAAA BBBB AAAAAAA");
-            data = RemoveDups(data);
+            var data = new StringBuilder("AAAAAAAA BBBB AAAAAAA FFFFFFFFFF SSSSSSSSSSSSS");
+            RemoveDups(data);
             Console.WriteLine(data); // "A B A"
         }
-        private static StringBuilder RemoveDups(StringBuilder data)
+        private static void RemoveDups(StringBuilder data)
         {
             bool isRemovedRepeat = false;
 
@@ -36,7 +36,6 @@ namespace TT_Saber
                     }
                 }
             }
-           return data;
         }
 
     }
