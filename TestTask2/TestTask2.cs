@@ -11,9 +11,9 @@ namespace TT_Saber
             //  может быть с разным количеством символов А или В например.
             //  Пришел либо к рукерсии, либо к зацикливанию цикла с проверкой
             //  выполненности требуемой задачи
-           
 
-            var data = new StringBuilder("AAAAAAAA BBBB AAAAAAA FFFFFFFFFF SSSSSSSSSSSSS");
+
+            var data = new StringBuilder("AAAAAAAA BBBB AAAAAAA FFFF S");
             RemoveDups(data);
             Console.WriteLine(data); // "A B A"
         }
@@ -23,6 +23,7 @@ namespace TT_Saber
 
             while (!isRemovedRepeat)
             {
+
                 for (int i = 0; i < data.Length - 1; i++)
                 {
                     if (data[i] == data[i + 1])
@@ -35,8 +36,15 @@ namespace TT_Saber
                         isRemovedRepeat = true;
                     }
                 }
+                for (int i = 0; i < data.Length - 1; i++) //понимаю, что не изящно, но я вышел за пределы указанного мною времени.
+                {                                         //подумаю еще, но пока так.
+                    if (data[i] == data[i + 1])
+                    {
+                        isRemovedRepeat = false;
+                    }
+                }
             }
-        }
 
+        }
     }
 }
