@@ -2,16 +2,17 @@
 
 namespace TT_Saber
 {
-    class Program
+    class TestTask1
     {
         static void Main(string[] args)
         {
             //  Несмелов Марат Олегович, 11.01.2023, ушло около 6 часов
             //  в основном сложность составило размышление об использовании
-            //  коллекции (стек), и решение с отрицательными числами
+            //  коллекции (стек), скорее всего назвали бы его библиотечным классом, 
+            //  и решение с отрицательными числами
 
 
-            int numbercheck = 12;
+            int numbercheck = -156;
             ShowBinaryRepresentation(numbercheck);
             ShowBinaryRepresentation(-numbercheck);
 
@@ -40,9 +41,9 @@ namespace TT_Saber
             }
             else
             {
-                GetRemainders(~value, binary);              //Вот тут мне кажется я взломал компилятор, по идеи должен
-                for (int k = 0; k < binary.Length; k++)     //добавлять еденицу, но не пришлось этого делать, удивился, но работает
-                {
+                GetRemainders(~value, binary);              //Вот тут немного схитрил, по идеи должен
+                for (int k = 0; k < binary.Length; k++)     //добавлять еденицу, но не пришлось этого делать, удивился, но работает.
+                {                                           //был вариант работы с модулем и дополнением числа, но оставлю так.
                     binary[k] = binary[k] == 1 ? 0 : 1;
                 }
 
@@ -64,8 +65,17 @@ namespace TT_Saber
 
         private static void PrintBinaryRepresentation(int[] binary)
         {
+            bool oneFinded = false;
             for (int k = 0; k < binary.Length; k++)
             {
+                if (binary[k] == 0 && !oneFinded)
+                {
+                    continue;
+                }
+                if (!oneFinded && binary[k] == 1)
+                {
+                    oneFinded = true;
+                }
                 Console.Write(binary[k]);
             }
             Console.WriteLine();
